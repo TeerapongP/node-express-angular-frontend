@@ -1,66 +1,87 @@
-.DS_STORE
+# macOS specific
+.DS_Store
 
+# Build directories
 /dist/
 /bazel-out
 /integration/bazel/bazel-*
+
+# Log files
 *.log
+
+# Node.js dependencies
 /node_modules/
 
-# CircleCI temporary file for cache key computation.
-# See `save_month_to_file` in `.circleci/config.yml`.
+# CircleCI cache file
 month.txt
 
-# Include when developing application packages.
+# Dart/Flutter package lock file
 pubspec.lock
+
+# Cloud9 IDE configuration
 .c9
+
+# IntelliJ IDEA settings
 .idea/
+
+# Devcontainer files (exclude everything except specific files)
 .devcontainer/*
 !.devcontainer/README.md
 !.devcontainer/recommended-devcontainer.json
 !.devcontainer/recommended-Dockerfile
+
+# Eclipse settings
 .settings/
+
+# VSCode settings (exclude specific settings files)
 .vscode/launch.json
 .vscode/settings.json
 .vscode/tasks.json
+
+# Swap files
 *.swo
 *.swp
+
+# Module-specific settings
 modules/.settings
 modules/.vscode
+
+# Vim and Neovim configuration
 .vimrc
 .nvimrc
 
-# Don't check in secret files
+# Secret files
 *secret.js
 
-# Ignore npm/yarn debug log
+# npm/yarn debug logs
 npm-debug.log
 yarn-error.log
 
-# build-analytics
+# Build analytics
 .build-analytics
 
-# rollup-test output
+# Rollup test output
 /modules/rollup-test/dist/
 
-# User specific bazel settings
+# User-specific Bazel settings
 .bazelrc.user
 
-# User specific ng-dev settings
+# User-specific Angular Dev settings
 .ng-dev.user*
 
+# Miscellaneous
 .notes.md
 baseline.json
 
-# Ignore .history for the xyz.local-history VSCode extension
+# VSCode local-history extension
 .history
 
-# Husky
+# Husky hooks
 .husky/_
 
-
-# Ignore cache created with the Angular CLI.
+# Angular CLI cache
 .angular/
 
-# Ignore AIO files, useful when changing branches 
+# Angular AIO files
 aio/node_modules
 aio/out-tsc
